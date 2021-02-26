@@ -48,7 +48,7 @@ Since the current use case does not have regular data updates, we assume the mod
 
 Here is a demo for how to use our API:
 
-![demo](Screen Recording - Demo.mp4)
+![demo](Screen Recording - Demo.gif)
 
 ## Implementation Guidance
 
