@@ -46,9 +46,7 @@ Since the current use case does not have regular data updates, we assume the mod
 
 ## Demo
 
-Here is a demo for how to use our API:
-
-![demo](Screen Recording - Demo.gif)
+Unfortunately, GitHub does not support local video embeddings, so no demo can be presented here in this README file. However, a screen recording is included in the repository, which can be downloaded and played locally.
 
 ## Implementation Guidance
 
