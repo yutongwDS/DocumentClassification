@@ -1,7 +1,7 @@
 # DocumentClassification
 
 ## Introduction
-This project is designed as solution to HeavyWater Machine Learning Problem - a document classification case. The problem statement and raw data can be found [here](https://github.com/HeavyWater-Solutions/document-classification-test). The final solution is built based on XGBoost classficiation model, and deployed on AWS platform. To test out the solution and predict your own document, try our [Document Classifcation website](http://ec2-184-73-60-214.compute-1.amazonaws.com:8888). It's open to everyone!
+This project is designed as solution to HeavyWater Machine Learning Problem - a document classification case. The problem statement and raw data can be found [here](https://github.com/HeavyWater-Solutions/document-classification-test). The final solution is built based on XGBoost classficiation model, and deployed on AWS platform. To test out the solution and predict your own document, try our [Document Classifcation website](http://ec2-184-73-60-214.compute-1.amazonaws.com:8888). It's open to everyone! 
 
 ## Data Description
 
@@ -43,6 +43,12 @@ This product is designed with four steps:
 ![pipeline](Pipeline.png)
 
 Since the current use case does not have regular data updates, we assume the model training process will not be repeated and no new function will required to be added for foresable future. Therefore, no CI/CD pipeline is included in this solution.
+
+## Demo
+
+Here is a demo for how to use our API:
+
+![demo](screen recording - demo.mp4)
 
 ## Implementation Guidance
 
