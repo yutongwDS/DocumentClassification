@@ -16,14 +16,17 @@ model = pickle.load(open('model/XGB.pkl', 'rb'))
 def home():
     if request.method == 'POST':
         data = request.form.get('word')
-
         # Make prediction
-        prec = text_prediction(data, vectorizer, model)
-        pred = prec.label_prediction()
-        confidence = prec.confidence()
-        pred_prob = prec.prediction_probability()
+        if data == '':
+            # ignore empty content
+            return render_template('index.html', prediction='', probability='')
+        else:
+            prec = text_prediction(data, vectorizer, model)
+            pred = prec.label_prediction()
+            confidence = prec.confidence()
+            pred_prob = prec.prediction_probability()
 
-        return render_template('index.html', prediction=pred, confidence=confidence, tables=[pred_prob.to_html(classes='data')], titles=pred_prob.columns.values)
+            return render_template('index.html', prediction=pred, confidence=confidence, tables=[pred_prob.to_html(classes='data')], titles=pred_prob.columns.values)
     else:
         return render_template('index.html', prediction='', probability='')
 
